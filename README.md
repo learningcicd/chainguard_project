@@ -1,4 +1,6 @@
 # Using a Standard Python Base Image to Run a Hello Python Code.
+
+```bash
 vds4025x11:~/cve-bliss/pycode# **grype buntyray2024/hello.py:latest --scope all-layers**
  ✔ Vulnerability DB                [no update available]
  ✔ Loaded image                                                                                                                                                                                                buntyray2024/hello.py:latest
@@ -674,8 +676,10 @@ wget                          1.21.3-1+b2                   (won't fix)       de
 wget                          1.21.3-1+b2                   (won't fix)       deb   CVE-2024-38428    Unknown
 zlib1g                        1:1.2.13.dfsg-1               (won't fix)       deb   CVE-2023-45853    Critical
 zlib1g-dev                    1:1.2.13.dfsg-1               (won't fix)       deb   CVE-2023-45853    Critical
-
+```
 # Using a Chainguard's Python Base Image to Run a Hello Python Code.
+
+```bash
 vds4025x11:~/cve-bliss/pycode# grype buntyray2024/hello.py:latest --scope all-layers
  ✔ Vulnerability DB                [no update available]
  ✔ Loaded image                                                                                                                                                                                                buntyray2024/hello.py:latest
@@ -689,3 +693,4 @@ vds4025x11:~/cve-bliss/pycode# grype buntyray2024/hello.py:latest --scope all-la
    ├── by severity: 0 critical, 0 high, 0 medium, 0 low, 0 negligible
    └── by status:   0 fixed, 0 not-fixed, 0 ignored
 No vulnerabilities found
+```
